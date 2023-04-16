@@ -10,9 +10,10 @@ To execute without container:
 
 * Please install MongoDB server on local machine.
 
-    $ python3 ./backend/api.py
 
-    $ cd frontend && npm i && ng serve --host 0.0.0.0
+        $ python3 ./backend/api.py
+
+        $ cd frontend && npm i && ng serve --host 0.0.0.0
 
 -------------------------------------------------------------------------------
 
