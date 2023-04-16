@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+    modbus_backend:
+        build: .
+        tty: true
+        stdin_open: true
+        ports:
+          - "5000:5000"
+        container_name: modbus_backend
+        command: python3 api.py

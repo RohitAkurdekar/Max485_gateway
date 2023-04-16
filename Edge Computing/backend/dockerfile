@@ -1,0 +1,10 @@
+# docker file of MODBUS project backend
+
+FROM python:3.12-rc-buster
+
+LABEL developer="MODBUS_team"
+WORKDIR /app/
+COPY . /app/
+RUN pip install -r requirements.txt
+# RUN python3 api.py
+# CMD ["python3","test.py"]
