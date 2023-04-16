@@ -1,0 +1,4 @@
+# dockerfile for MODBUS project mongoDB
+FROM rohitakurdekar/mongo:modbus
+
+LABEL developer="MODBUS_team"
