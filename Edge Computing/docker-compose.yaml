@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+    modbus_backend:
+        build: ./backend/
+        tty: true
+        stdin_open: true
+        ports:
+          - 5000:5000
+        container_name: modbus_backend
+        command: python3 api.py
+        restart: always
+        links:
+          - modbus_mongodb
+        depends_on:
+          - modbus_mongodb
+    modbus_frontend:
+        build: ./frontend/
+        tty: true
+        stdin_open: true
+        ports:
+          - 4200:4200
+        container_name: modbus_frontend
+        command: ng serve --host 0.0.0.0
+        depends_on:
+          - modbus_backend
+        restart: always
+        links:
+          - modbus_mongodb
+    modbus_mongodb:
+      build: ./mongo/
+      tty: true
+      stdin_open: true
+      expose:
+        - 27017
+      ports:
+        - 27017:27017
+      container_name: modbus_mongod
+      restart: always

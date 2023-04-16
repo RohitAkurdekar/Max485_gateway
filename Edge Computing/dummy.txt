@@ -1,0 +1,7 @@
+docker rm modbus_frontend   && docker rmi dockerimage-modbus_frontend:latest &&
+docker rm modbus_backend    && docker rmi dockerimage-modbus_backend:latest  &&
+docker rm modbus_mongod     && docker rmi dockerimage-modbus_mongodb
+
+docker rmi dockerimage_modbus_backend:latest && 
+docker rmi dockerimage_modbus_frontend:latest && 
+docker rmi dockerimage_modbus_mongodb:latest
