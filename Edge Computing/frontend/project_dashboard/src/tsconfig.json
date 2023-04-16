@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "mapRoot": "./",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "../dist/out-tsc",
+    "sourceMap": true,
+    "target": "ES2022",
+    "allowJs":true,
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "exclude": ["node_modules",
+    "**/*.spec.ts"
+  ]
+}

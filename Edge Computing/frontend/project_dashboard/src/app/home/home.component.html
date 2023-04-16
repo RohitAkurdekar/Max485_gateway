@@ -1,0 +1,97 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <h3 class="title">Gateway ID :1301</h3>
+        <h4 class="title">Device 1:BME280</h4>
+               <!-- Pressure Graph -->
+        <div class="row">
+            <h5>Preasure:</h5>
+            <div class="col-md-8">
+                <div class="card">
+                    <div  id="divChart">
+                         <div class="chart-container">
+                            <canvas  id="MyChartDev1Pre" >{{ chartP }}</canvas>
+                         </div>
+                    </div>
+                    <div class="content">
+                        <div class="footer">
+                           <hr>
+                           <div class="stats">
+                               <i class="fa fa-history"></i> updated before 5 sec
+                           </div>
+                       </div>  
+                   </div> 
+                </div>                
+            </div>
+        </div>
+            <!-- Temperature Graph -->
+        <div class="row">
+            <h5>Temperature:</h5>
+            <div class="col-md-8">
+                <div class="card">
+                    <div  id="divChart">
+                         <div class="chart-container">
+                            <canvas  id="MyChartDev1Temp" >{{ chartT }}</canvas>
+                         </div>
+                    </div>
+                    <div class="content">
+                        <div class="footer">
+                           <hr>
+                           <div class="stats">
+                               <i class="fa fa-history"></i> updated before 5 sec
+                           </div>
+                       </div>  
+                   </div> 
+                </div>
+            </div>
+        </div>
+
+                <!--Altitude Graph  -->
+        
+        <div class="row">
+            <h5>Altitude:</h5>
+            <div class="col-md-8">
+                <div class="card">
+                    <div  id="divChart">
+                         <div class="chart-container">
+                            <canvas  id="MyChartDev1Alt" >{{ chartA }}</canvas>
+                         </div>
+                    </div>
+                    <div class="content">
+                        <div class="footer">
+                           <hr>
+                           <div class="stats">
+                               <i class="fa fa-history"></i> updated before 5 sec
+                           </div>
+                       </div>  
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Device 2 -->
+    <div class="container-fluid">
+        <h4 class="title">Device 2:Single Wire</h4>
+        <div class="row">
+            <h5>Sensor Value:</h5>
+            <div class="col-md-8">
+                <div class="card">
+                    <div  id="divChart">
+                         <div class="chart-container">
+                            <canvas  id="MyChartDev2" >{{ chart }}</canvas>
+                         </div>
+                    </div>
+                    <div class="content">
+                        <div class="footer">
+                           <hr>
+                           <div class="stats">
+                               <i class="fa fa-history"></i> updated before 5 sec
+                           </div>
+                       </div>  
+                   </div> 
+                </div>                
+            </div>
+        </div>
+       
+    </div>
+</div>

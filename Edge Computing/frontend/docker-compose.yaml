@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+    modbus_frontend:
+        build: .
+        tty: true
+        stdin_open: true
+        ports:
+          - "4200:4200"
+        container_name: modbus_frontend
+        command: ng serve --host 0.0.0.0

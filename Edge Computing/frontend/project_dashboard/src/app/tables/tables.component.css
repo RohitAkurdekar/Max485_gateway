@@ -1,0 +1,15 @@
+table,th, td {
+    border-collapse: separate;
+    border: 1px solid;
+    margin: 1%;
+    padding: 1%;
+  }
+
+  
+  #table1{
+    width: 80%;
+  }
+
+  #table2{
+    width: 41%;
+  }
